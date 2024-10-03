@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/***logo-name-scerch*****/
+.listyles{
+    list-style: none;
+    align-items: center;
+}
+
+.logo-name-scerch ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#logo{
+
+    width: 40px;
+    height: 40px;
+    top: -2px;
+
+} 
+.logo-MEdu{
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 15px;
+    position: relative;
+    top: -4px;
+}
+
+/* ----------------------------Search---------------------------------------- */
+
+
+
+#search {
+    width: 100%;
+    height: auto;
+    background-color: rgb(230, 239, 237);
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+     animation-name: pulse;
+}
+
+
+#search:hover {
+    background-color: rgb(49, 196, 120);
+    transform: scale(1.02);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+

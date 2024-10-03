@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Nine and tan</title>
+
+  <!-- Addtion link of the file -->
+  <link rel="stylesheet" href="/home/home.css">
+  <link rel="stylesheet" href="/secondary/class_vi/class_vi.css">
+  <link rel="stylesheet" href="class_ix_x.css">
+  <link rel="stylesheet" href="/BasicFunctionalityOfPages/header/header.html">
+</head>
+
+<body>
+  <!-- Top of the table -->
+  <header>
+
+    <div id="header"></div>
+    <script src="Customer-Service.js"></script>
+   </header>
+
+  <!-- all navigation1 of the about this our websit -->
+  <nav class="NavigationSecond">
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="">Contract</a></li>
+      <li><a href="">Tutorial</a></li>
+      <li><a href="">Service</a></li>
+      <li><a href="">History</a></li>
+      <li><a href="/home/home.html">Home</a></li>
+    </ul>
+  </nav>
+  <!-- slider -->
+
+  <div class="slider_body">
+    <div class="slider">
+      <marquee behavior="slider" direction="left" style="z-index: 1;align-items: center;line-height: 1rem;">Group Science</marquee>      
+        <div class="slides">
+            <img src="/secondary/class_vi/slider_img/children_Reading.jpg" alt="Children Reading">
+            <img src="/secondary/class_vi/slider_img/Educational_tools.jpg" alt="Educational Tools">
+            <img src="/secondary/class_vi/slider_img/Kids_drawing.jpg" alt="Kids Drawing">
+            <!-- <img src="slider_img/Kids_Learning_computers.jpg" alt="Kids Learning Computers"> -->
+            <img src="/secondary/class_vi/slider_img/TeacherAndStudent.jpg" alt="Teacher and Student">
+        </div>
+    </div>
+  </div>
+  <script src="/secondary/class_vi/class_vi.js"></script>
+  <!-- list of the subject -->
+  <br>
+<marquee behavior="books" direction="left">Chooices your subject to Learn.</marquee>
+  <div class="subject">
+    <div class="department-name Bangla"><a href="/secondary/class_ix_x/Common_Subject/Bangla Grammar/Bangla.php">Bangla</a></div>
+    <div class="department-name "><a href="english1.html"><span class="bangla_supplementary_reding">Bangla Supplementary Reading</span></a></div>
+    <div class="department-name"><a href="math.html">Bangla Grammar</a></div>
+    <div class="department-name"><a href="Common_Subject/English For Today/EnglishForToday.html">English for Today</a></div>
+    <div class="department-name"><a href="math.html">Science Practice</a></div>
+    <div class="department-name"><a href="math.html">Mathematics</a></div>
+    <div class="department-name"><a href="math.html">English Grammar and Composition</a></div>
+    <div class="department-name"><a href="math.html">ICT</a></div>
+    <div class="department-name"><a href="math.html">Physics</a></div>
+    <div class="department-name"><a href="math.html">Chemistry</a></div>
+    <div class="department-name"><a href="math.html">Biology</a></div>
+    <div class="department-name"><a href="math.html">Advanced Mathematics</a></div>
+    <div class="department-name"><a href="math.html">Geography and Environment</a></div>
+
+  </div>
+  <!-- Main content of the page -->
+  <div class="AllOfFooter">
+    <div id="main-content" class="main-content">
+      <div class="paid_c">
+        <div class="course-card">
+          <div class="card-header">
+            <h2>Advanced PHP and Image Handling</h2>
+          </div>
+          <div class="card-body">
+            <p class="course-overview">
+              Enhance your PHP skills and master image handling techniques including uploading, manipulation, and
+              integration with cloud storage.
+            </p>
+            <ul class="course-details">
+              <li><strong>Duration:</strong> 4 Weeks (8 Sessions)</li>
+              <li><strong>Price:</strong> Standard - $299, Premium - $499</li>
+            </ul>
+            <button class="enroll-btn" onclick="showModal()">Enroll Now</button>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="card-header">
+            <h2>Advanced JavaScript and Web Development</h2>
+          </div>
+          <div class="card-body">
+            <p class="course-overview">
+              Learn advanced JavaScript techniques and modern web development practices including frameworks and
+              libraries.
+            </p>
+            <ul class="course-details">
+              <li><strong>Duration:</strong> 4 Weeks (8 Sessions)</li>
+              <li><strong>Price:</strong> Standard - $299, Premium - $499</li>
+            </ul>
+            <button class="enroll-btn" onclick="showModal()">Enroll Now</button>
+          </div>
+        </div>
+
+        <div id="enrollModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Enroll in Advanced PHP and Image Handling</h2>
+            <form action="enroll.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="plan">Select Plan:</label>
+              <select id="plan" name="plan" required>
+                <option value="standard">Standard - $299</option>
+                <option value="premium">Premium - $499</option>
+              </select>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h2>About Us</h2>
+          <p>
+            We are committed to providing the best service for our customers.
+            Our aim is to exceed expectations.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: support@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: Kishorgang,Dhaka,bangladesh</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 MEdu | Designed by Nadib
+      </div>
+    </footer>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>

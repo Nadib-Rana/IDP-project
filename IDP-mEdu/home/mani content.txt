@@ -1,0 +1,8 @@
+
+1.Navigation(website name , search option, website logo) 
+2.Navigation var(About, Service, tutorial, contract, History)
+3.Right-site Navigation
+4.left-site is the display Content of the Right site 
+5.paid service.
+6.Footer
+

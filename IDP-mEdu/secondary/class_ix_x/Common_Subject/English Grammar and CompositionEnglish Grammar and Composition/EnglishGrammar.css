@@ -1,0 +1,138 @@
+
+.side_body {
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.sidenav {
+    width: 250px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#1b1b1b;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #dee5e7;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #3c9079;
+}
+
+.dropdown-btn.active {
+    background-color: #575757;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #d0c9c9;
+    padding-left: 8px;
+}
+
+.dropdown-container a {
+    position: relative;
+    padding-left: 20px;
+    
+}
+
+.dropdown-container a::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #818181;
+    border-radius: 50%;
+}
+
+.dropdown-container a.active::before {
+    background-color: #4CAF50;
+}
+
+.dropdown-container a:hover::before {
+    background-color: #f1f1f1;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+.contentDelais{
+display:none;
+}
+/* laptop */
+@media (max-width: 768px) {
+    
+   
+
+    /*right side class*/
+    .sidenav{
+        width: 60%;
+        height: 100%;
+        background-color: #d8e5e5;
+        }
+    .dropdown-btn{
+        font-size: 16px;
+        color: #474646;
+    }
+       .dropdown-container a{
+            font-size: 15px;
+            color: #100f0f;
+            background-color: lightgrey;
+            }
+        
+    /**left site navigation var***/
+    
+    
+    
+    
+    
+    }
+
+/* phone */
+
+@media (max-width: 380px) {
+    
+   
+
+/*right side class*/
+.sidenav{
+    width: 60%;
+    height: 100%;
+    background-color: #dee5e7;
+    }
+.dropdown-btn{
+    font-size: 15px;
+    color: #262626;
+}
+   .dropdown-container a{
+        font-size: 12px;
+        color: #111;
+        background-color: lightgrey;
+        }
+    
+
+
+
+/**left site navigation var***/
+
+
+
+
+
+}

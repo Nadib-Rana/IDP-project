@@ -1,0 +1,589 @@
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+nav ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+nav ul .listyles {
+    position: relative;
+}
+nav ul .listyles a {
+    color: black;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+    font-size: 15px;
+    behavior: smooth;
+}
+nav ul .listyles a:hover {
+    color: white;
+    background-color: black;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: gray;
+    margin-right:10%;
+}
+.nav-links {
+    display: flex;
+}
+.listyles {
+    font-size: 18px;
+    list-style: none;
+}
+.listyles a{
+    text-decoration: none;
+}
+/***logo-name-scerch*****/
+
+.logo-name-scerch ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo-MEdu{
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 15px;
+    position: relative;
+    top: -4px;
+}
+#search{
+    margin-top: 8px;
+    width: 100px;
+    height: 3px;
+    background-color:rgb(235, 230, 239) ;
+    border-radius:  5px;
+}
+
+/* <!-- all navigation1 of the about  our websit --> */
+.navigation1 .manu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    background-color: antiquewhite;    
+}
+
+.navigation1 .manu li:hover{
+background-color: rgb(150, 205, 95);
+border: 0.1px solid green;
+border-radius: 5px;
+padding: 0px;
+}
+
+.sideNavigaton{
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+
+.navigation {
+    flex: 0 0 200px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.navigation a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a.active {
+    background-color: green;
+    color: white;
+}
+
+.content-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.content {
+    display: none;
+}
+
+/* subjet */
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    }
+    .department-name{
+    background-color: rgb(116, 106, 94);
+    width: 100px;
+    height:100px;
+    border: 3px solid white;
+    padding: 2px;
+    }
+
+.subject{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+.subject div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;   
+    border-radius: 15px;
+    border: px solid black;
+    margin: 10px;
+    
+}
+
+.subject div:hover{
+    box-shadow: 0.1px 05px 0.2px 02px #88886e;
+    width: 103px;
+    height:103px;
+}
+.subject div a{
+    color: rgb(15, 66, 26);
+    
+}
+
+.subject .department-name a{
+
+font-size: 14px;
+}
+
+
+.subjectList{
+    display: none;
+}
+
+.AllOfFooter{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paid_c {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(50% - 40px); /* Allows two cards per row with 20px gap */
+    box-sizing: border-box;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background: #35424a;
+    color: #fff;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.course-overview {
+    margin: 10px 0;
+}
+
+.course-details {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.course-details li {
+    margin: 10px 0;
+}
+
+.enroll-btn {
+    background: #35424a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+    background: #28333a;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: slideIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, select, .submit-btn {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background: #35424a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #28333a;
+}
+
+/* <!-- Footer of the page --> */
+.AllOfFooter {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+
+#footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section .h2tag{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li,
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #ccc;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 34%;
+        border-right: 2px solid rgb(184, 175, 178);
+        z-index: 1;
+        position: fixed;
+        background-color: #35424a;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 17px;
+        width: 30px;
+        padding-left: 90%;
+      }
+    .nav-links.active {
+        display: flex;
+        
+    }
+  
+    .NavigationSecond ul {
+        flex-direction: column;
+        width: 45%;
+    }
+    .NavigationSecond ul li {
+        width: 100%;
+        text-align: center;
+        
+    }
+    .NavigationSecond:hover .nav-links{
+        display:block;
+    }
+    nav ul a {
+        font-size: 16px;
+    }
+
+/*right side class*/
+.department-name{
+    background-color: rgb(116, 106, 94);
+    width: 60px;
+    height:60px;
+    border: 3px solid white;
+    padding: 2px;
+    }
+    .subject div:hover{
+        box-shadow: 0.1px 4px 0.2px 0.2px #88886e;
+        width: 63px;
+        height:63px;
+    }
+    .subject .department-name a{
+        font-size: 11px;
+        }
+    
+
+
+
+/**left site navigation var***/
+.navigation {
+    flex: 0 0 150px;
+    border-right: 1px solid #ddd;
+}
+    .navigation a{
+        color: #222;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:15px;
+    } 
+
+    /**** card section *****/
+    .course-card {
+        max-width: 350px;
+    }
+    .h2tag{
+    font-size: 17px;
+   }
+   p{
+    font-size: 14px;
+   }
+   .course-details li{
+    font-size: 15.8px;
+   }
+
+
+   /*footer*/
+   ul .listyles a{
+    font-size: 14px;
+   }
+   a{
+    font-size: 14px;
+   }
+
+   .NavigationSecond  {
+    left: 95%;
+    margin-left:55%;
+}
+
+
+}
+
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 34%;
+        border-right: 2px solid rgb(184, 175, 178);
+        z-index: 1;
+        position: fixed;
+        background-color: #35424a;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 15px;
+        position: relative;
+        left:90%;
+    }
+ 
+    .NavigationSecond:hover .nav-links{
+        display:block;
+    }
+    nav ul a {
+        font-size: 13px;
+    }
+
+/*right side class*/
+.department-name{
+    background-color: rgb(116, 106, 94);
+    width: 50px;
+    height:50px;
+    border: 3px solid white;
+    padding: 2px;
+    }
+    .subject div:hover{
+        box-shadow: 0.1px 3px 0.2px 0.2px #88886e;
+        width: 53px;
+        height:53px;
+    }
+    .subject .department-name a{
+        font-size: 8px;
+        }
+    
+
+
+
+/**left site navigation var***/
+.navigation {
+    flex: 0 0 132px;
+    border-right: 1px solid #ddd;
+}
+    .navigation a{
+        color: #222;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:14px;
+    } 
+
+    /**** card section *****/
+    .course-card {
+        max-width: 300px;
+    }
+    .h2tag{
+    font-size: 15px;
+   }
+   p{
+    font-size: 13px;
+   }
+   .course-details li{
+    font-size: 14.8px;
+   }
+
+
+   /*footer*/
+   ul .listyles a{
+    font-size: 12px;
+   }
+   a{
+    font-size: 13px;
+   }
+
+}

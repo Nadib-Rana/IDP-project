@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Customer-Service.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="../BasicFunctionalityOfPages/header/header.css">
+    <link rel="stylesheet" href="../BasicFunctionalityOfPages/header/header.html">
+</head>
+<body>
+    
+
+   <header>
+
+    <div id="header"></div>
+    <script src="Customer-Service.js"></script>
+   </header>
+    
+    <div class="container">
+        <h1>Contact Our Customer Service Team</h1>
+        
+        <div class="chat-container">
+            <button id="live-chat" onclick="startLiveChat()">Free Live Chat</button>
+        </div>
+        
+        <h2>Select a Customer Service Representative:</h2>
+        <div class="rep-cards">
+            <div class="rep-card">
+                <img src="Customer-Service-Representative/Representative1.jpg" alt="John Doe" class="rep-img">
+                <div class="rep-info">
+                    <h3>John Doe</h3>
+                    <p>Email: john@example.com</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span> <!-- Empty star -->
+                        <p>(4/5)</p>
+                    </div>
+                    <p class="price">$50/hour</p>
+                </div>
+                <button class="contact-button" onclick="selectRep('John Doe')">Contact</button>
+            </div>
+
+            <div class="rep-card">
+                <img src="Customer-Service-Representative/Representative1.jpg" alt="Jane Smith" class="rep-img">
+                <div class="rep-info">
+                    <h3>Jane Smith</h3>
+                    <p>Email: jane@example.com</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span> <!-- Filled star -->
+                        <p>(5/5)</p>
+                    </div>
+                    <p class="price">$60/hour</p>
+                </div>
+                <button class="contact-button" onclick="selectRep('Jane Smith')">Contact</button>
+            </div>
+
+            <div class="rep-card">
+                <img src="Customer-Service-Representative/Representative1.jpg
+                " alt="Mike Johnson" class="rep-img">
+                <div class="rep-info">
+                    <h3>Nadib Rana</h3>
+                    <p>Email: nadib@213.com</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span> <!-- Empty star -->
+                        <span class="star">&#9734;</span> <!-- Empty star -->
+                        <p>(3/5)</p>
+                    </div>
+                    <p class="price">$45/hour</p>
+                </div>
+                <button class="contact-button" onclick="selectRep('Mike Johnson')">Contact</button>
+            </div>
+        </div>
+
+        <form action="#" method="POST" id="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+
+    <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2 class="h2tag">About Us</h2>
+            <p>
+              We are committed to providing the best service for our customers.
+              Our aim is to exceed expectations.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2 class="h2tag">Quick Links</h2>
+            <ul>
+              <li class="listyles"><a href="index.html">Home</a></li>
+              <li class="listyles"><a href="#">About</a></li>
+              <li class="listyles"><a href="#all_menu">Services</a></li>
+              <li class="listyles"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2 class="h2tag">Contact Us</h2>
+            <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Email: support@allinal.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: Dhaka, bangladesh</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 MEdu | Designed by Nadib Rana
+        </div>
+      </footer>
+</body>
+</html>

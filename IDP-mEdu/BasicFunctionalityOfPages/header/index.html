@@ -1,0 +1,35 @@
+<!-- Example page: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div>Content goes here</div>
+    </main>
+    <script>
+       
+fetch('header.html')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok: ' + response.statusText);
+        }
+        return response.text(); // Extract text from the response
+    })
+    .then(data => {
+        const header_push = document.getElementById('header');
+        header_push.innerHTML = data; // Insert the fetched HTML into the header element
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error); // Handle any errors
+    });
+
+
+
+    </script>
+</body>
+</html>
